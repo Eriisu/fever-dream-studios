@@ -138,7 +138,7 @@ header {
   width: 100%;
   height: 100vh;
   background-color: #000;
-  background-image: url(https://cdn.mos.cms.futurecdn.net/yh6y6wgK7tmZzEJro3cyCC.jpg);
+  background-image: url('./assets/welcome.png');
   background-attachment: fixed;
   background-size : cover;
 }
@@ -197,7 +197,7 @@ header {
   width: 100%;
   height: 100vh;
   background-color: #000;
-  background-image: url(https://cdn.wccftech.com/wp-content/uploads/2017/08/Assassins-Creed-Origins-4k-gameplay.jpg);
+  background-image: url('./assets/assassins-origins.png');
   background-attachment: fixed;
   background-size: cover;
 }
