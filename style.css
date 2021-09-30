@@ -1,0 +1,379 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-grey: #404040;
+  --main-neonyellow: #fffc96;
+  --main-gray: #303841;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+
+h1,
+h2 {
+  font-family: 'Thasadith', sans-serif;
+  font-weight: 700;
+  font-size: 4.2rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 6rem;
+  color: var(--main-grey);
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* NAVBAR */
+header {
+  position: fixed;
+  top: 0;
+  max-height: 90px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.nav-list a:hover {
+  background: none;
+  color: var(--main-neonyellow);
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1px) {
+  #header {
+    box-shadow: inset 0px -2px 0px 0px var(--main-neonyellow);
+    background-color: black;
+    position: relative;
+    z-index: 3;
+  }
+}
+@media all and (min-width: 1px) {
+  #header {
+    box-shadow: inset 0px -2px 0px 0px var(--main-neonyellow);
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    z-index: 3;
+  }
+}
+
+.logo {
+  margin-left: 600px;
+  width: 175px;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    position: relative;
+  }
+}
+
+.logo > img {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: -550px;
+  margin-bottom: 24px;
+}
+
+
+/* WELCOME */
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: url(https://cdn.mos.cms.futurecdn.net/yh6y6wgK7tmZzEJro3cyCC.jpg);
+  background-attachment: fixed;
+  background-size : cover;
+}
+
+.welcome-section > h1 {
+  margin-top: -250px;
+}
+
+.welcome-section > p {
+  font-size: 2.5rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--main-grey);
+}
+
+/* ABOUT US */
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-top: 2px solid #fffc96;
+  border-bottom: 2px solid #fffc96;
+  /* background-image: */
+  /* linear-gradient(
+      120deg,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.5)
+  ), url(https://www.cisl.cam.ac.uk/education/executive-education/middle-east/middle-east-images/london-skyline.jpg/image); */
+  background-attachment: fixed;
+  background-size : cover;
+}
+
+.about-us-header {
+  margin-top: 30px;
+  border-bottom: 0.2rem solid var(--main-white);
+  font-family: 'Philosopher', sans-serif;
+}
+
+.about-us > p {
+  margin-bottom: 30px;
+  margin-right: 300px;
+  margin-left: 300px;
+  text-align: center;
+}
+
+/* OUT NOW */
+
+.outnow-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: url(https://cdn.wccftech.com/wp-content/uploads/2017/08/Assassins-Creed-Origins-4k-gameplay.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.outnow-section > img {
+  width: 500px;
+  margin-right: 700px;
+  padding-top: 20px;
+}
+
+.outnow-section > p {
+  font-size: 2.6rem;
+  font-weight: 200;
+  margin-top: -30px;
+  margin-left: -520px;
+  padding-bottom: 20px;
+  color: var(--main-grey);
+}
+
+#description {
+  margin-left: 110px;
+  margin-right: 700px;
+  font-size: 1.8rem;
+}
+
+#outnow-button {
+  border: none;
+  border-radius: 16px;
+  color: var(--main-grey);
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 4px 1080px 40px 0px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#outnow-button:hover {
+  background-color: #fffefe;
+  transform: scale(1.05);
+}
+
+/* GAMES */
+
+.games-section {
+  text-align: center;
+  padding: 5rem 5rem 10rem 5rem;
+  background-color: var(--main-grey);
+}
+
+.games-section-header {
+  margin: 0 auto 5rem auto;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+@media (max-width: 28.75em) {
+  .games-section-header {
+    font-size: 4rem;
+  }
+}
+
+/* "Automagic" image grid using no media queries */
+.games-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* grid-template-columns: 300px 300px 300px 300px;
+  grid-gap: 3rem; */
+  margin: 0 60px;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+}
+
+.game {
+  width: 250px;
+  margin-bottom: 40px;
+  transition: all 0.2s ease;
+}
+
+.game:hover {
+  transform: scale(1.05);
+}
+
+.games-button {
+  display: flex;
+  justify-content: center;
+  margin-top: -95px;
+}
+
+
+.code {
+  color: var(--main-grey);
+  transition: color 0.3s ease-out;
+}
+
+.game:hover .code {
+  color: var(--main-grey);
+}
+
+.game-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.btn-show-all {
+  font-family: 'Thasadith', sans-serif;
+  font-size: 2rem;
+  background: black;
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: rgb(26, 26, 26);
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+/* FOOTER */
+
+.footercontainer {
+  width: 100vw;
+  height: 400px;
+  background-color: black;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  width: 550px;
+  margin: 20px 50px;
+  padding: 0 30px;
+}
+
+.footerlogo {
+  width: 100px;
+}
+
+.footertext {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.termslink {
+  text-decoration: underline;
+}
+
+.footerlinklist {
+  list-style-type: none;
+}
+
+.footerlink {
+  text-decoration: none;
+}
+
+.right {
+  width: 600px;
+  color: white;
+}
